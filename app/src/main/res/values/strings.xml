@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">JFrame Task</string>
+    <string name="sort_by">Sort By</string>
+    <string name="type">Type</string>
+    <string name="price">Price</string>
+    <string name="capacity">Capacity</string>
+    <string name="standard">Standard</string>
+    <string name="delux">Delux</string>
+    <string name="luxury">Luxury</string>
+    <string name="all">All</string>
+    <string name="book">book</string>
+    <string name="sign_in">Sign In</string>
+    <string name="click_here_to_register">Click here to register</string>
+    <string name="password">Password</string>
+    <string name="email_id">Email ID</string>
+    <string name="already_a_user">Already A User??</string>
+    <string name="signup">SignUp</string>
+    <string name="mobile_no">Mobile No</string>
+    <string name="user_name">User Name</string>
+    <string name="room_no1">Room No1</string>
+    <string name="room_2">Room 2</string>
+    <string name="please_enter_the_no_of_guest">Please enter the No of guest</string>
+    <string name="by_date">By Date</string>
+    <string name="by_room_type">By Room Type</string>
+</resources>

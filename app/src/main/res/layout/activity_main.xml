@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.MainActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/Rel"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+        <TextView
+            android:id="@+id/sortBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/sort_by"
+            android:layout_marginStart="4dp"
+             />
+     <Button
+         android:id="@+id/datefilter"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="@string/by_date"
+         android:layout_toEndOf="@id/sortBy"
+         android:background="@drawable/btnshape"
+         android:layout_marginStart="8dp"
+         style="@style/standardtextstyle"
+         />
+
+        <Button
+            android:id="@+id/byRoomtype"
+            style="@style/standardtextstyle"
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_toEndOf="@id/datefilter"
+            android:background="@drawable/btnshape"
+            android:text="@string/by_room_type" />
+
+
+
+    </RelativeLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Rooms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:layout_below="@id/Rel"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/standardRooms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:visibility="gone"
+        android:layout_below="@id/Rel"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/DeluxRooms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:visibility="gone"
+        android:layout_below="@id/Rel"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/LuxuryRooms"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="6dp"
+        android:visibility="gone"
+        android:layout_below="@id/Rel"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        app:spanCount="2"
+        />
+
+    </RelativeLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

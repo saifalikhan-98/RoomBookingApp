@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_paymentback"
+    tools:context=".Activities.Login">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <EditText
+            android:id="@+id/emaillogin"
+            style="@style/standardtextstyle"
+            android:layout_width="264dp"
+            android:layout_height="75dp"
+            android:layout_centerHorizontal="true"
+            android:textColorHint="@android:color/black"
+            android:hint="@string/email_id" />
+        <EditText
+            android:id="@+id/passowrdlogin"
+            style="@style/standardtextstyle"
+            android:layout_width="264dp"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/emaillogin"
+            android:textColorHint="@android:color/black"
+            android:layout_centerHorizontal="true"
+            android:hint="@string/password" />
+
+
+        <Button
+            android:id="@+id/bLogin"
+            android:layout_width="220dp"
+            android:layout_height="60dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/passowrdlogin"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/btnshape"
+            android:foreground="?attr/selectableItemBackground"
+            android:text="@string/sign_in"
+            style="@style/standardtextstyle"
+
+            tools:targetApi="m" />
+
+        <TextView
+            android:id="@+id/bClickRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bLogin"
+            android:text="Click Here to Register"
+            android:layout_centerHorizontal="true"
+            style="@style/standardtextstyle"
+            tools:ignore="SmallSp" />
+    </RelativeLayout>
+
+
+</RelativeLayout>
